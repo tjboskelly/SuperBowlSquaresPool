@@ -1,0 +1,35 @@
+table table-borderd, th, td {
+    border: 1px solid white;
+    width: 8rem;
+    height: 2rem;
+    text-align: center;
+    
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    width:25%;
+}
+.btn-random {
+    background: red;
+    color: white;
+}
+th {
+  background: lightblue;
+    color: black;
+}
+body {
+  padding: 3rem;
+}
+#shuffle > div {
+    float: left;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    background-color: steelblue;
+    color: #fff;
+    border-radius: 4px;
+    margin: 3px;
+}
