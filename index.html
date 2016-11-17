@@ -1,0 +1,29 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/squares.css">
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="squares.js"></script>
+    </head>
+    <body>
+        <div class="tableArea">
+            <table class="fullTable">
+                <tbody ng-app="squaresApp" ng-controller="squaresCtrl">
+                    <tr>
+                        <td><span ng-repeat="away in awayScore" class="awayScore">{{away}}<br ng-show="(i+1)%1==0"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span ng-repeat="home in homeScore" class="homeScore">{{home}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><span ng-repeat="(i, entry) in entries track by $index">
+                            <input ng-model="entries[i]" class="entryInput" placeholder="entry"> <br ng-show="(i+1)%10==0"></span>
+                        </td>
+                    </tr>
+                </tbody>    
+            </table>
+        </div>
+    </body>
+</html>

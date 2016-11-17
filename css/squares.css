@@ -1,0 +1,33 @@
+.tableArea{
+    overflow-x: scroll;
+    padding: 50px;
+}
+.fullTable{
+    border: 2px solid black;
+    margin: auto;
+    padding: 1px;
+}
+td{
+    white-space: nowrap;
+    padding: 3px;
+    width: 50px;
+}
+.entryInput{
+    width: 56px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 3px;
+}
+.homeScore{
+    text-align: center;
+    padding-left: 28px;
+    padding-right: 29px;
+    
+}
+table{
+    table-layout: fixed;
+    width: 670px;
+}
+.awayScore{
+    transform: translateY(-100px);
+}
